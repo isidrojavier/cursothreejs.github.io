@@ -26,6 +26,27 @@
 <body>
    <script>
      //Place your code here
+     const planetas = ["mercurio", "venus","tierra","jupiter", "saturno","urano"];
+     console.log("Hay " + planetas.length + " planetas en nuestro sistema solar.");
+    
+     //añade un elemento al final del array
+     planetas.push("pluton");
+
+     console.log("Hasta el 2006 había " + planetas.length + " planetas en nuestro sistema solar");
+
+     //elimina el elemento del array y lo deja en una variable o constante en este caso
+     const pluton = planetas.pop();
+     console.log("En 2006 "+ pluton + " fue desclasificado como planeta. Ahora hay " + planetas.length + " planetas");
+   
+   function getMes(){
+    const numMes = new Date().getMonth();
+    
+    const meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+
+    //console.log("hoy es " + meses[numMes]);
+    return meses[numMes];
+   }
+   
    </script> 
 </body>
 
