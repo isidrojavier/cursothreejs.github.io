@@ -25,7 +25,51 @@
 
 <body>
   <script>  
+    function compara(a,b){
+      if ((isNaN(a)) || (isNaN(b))){
+        console.log("uno de los elementos no es un número");
+      } else if (a<b){
+          console.log (a + " es más pequeño que " + b);
+        } else if (a==b){
+          console.log (a + " es igual que " + b);
+        }else{
+          console.log (a + " es mayor que " + b);
+        }
+      }
     
+    function hoy(){
+      const day = new Date().getDay();
+      //console.log (day);
+      switch(day){
+        case 0:
+          console.log("hoy es domingo");
+          break;
+        case 1:
+          console.log("hoy es lunes");
+          break;
+        case 2:
+          console.log("hoy es martes");
+          break;
+        case 3:
+          console.log("hoy es miercoles");
+          break;
+        case 4:
+          console.log("hoy es jueves");
+          break;
+        case 5:
+          console.log("hoy es viernes");
+          break;
+        case 6:
+          console.log("hoy es sabado");
+          break;
+      }
+    }
+    
+    function findesemana(){
+      const day = new Date().getDay();
+      return (day==0 || day==6) ? "Es fin de semana" : "No es fin de semana";
+    }
+
   </script>
 </body>
 
